@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body style="font-family:sans-serif;min-width:340px">
+  <p>Sapling API key (AI detection)</p>
+  <input id="key" type="password" style="width:100%">
+
+  <p>OpenRouter API key (from openrouter.ai/keys)</p>
+  <input id="openrouterKey" type="password" style="width:100%">
+
+  <p>Model (leave empty for Nemotron 3 Ultra free)</p>
+  <input id="model" placeholder="nvidia/nemotron-3-ultra-550b-a55b:free" style="width:100%">
+
+  <p>Tavily API key (web search, from app.tavily.com)</p>
+  <input id="tavilyKey" type="password" style="width:100%">
+
+  <p><button id="save">Save</button> <span id="status"></span></p>
+  <script src="options.js"></script>
+</body>
+</html>

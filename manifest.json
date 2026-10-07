@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "AI Misinformation Detector",
+  "version": "1.0",
+  "description": "Check selected text for AI writing (Sapling) or fact-check it with an OpenRouter model and Tavily search.",
+  "permissions": [
+    "activeTab",
+    "menus",
+    "storage",
+    "https://api.sapling.ai/*",
+    "https://api.tavily.com/*",
+    "https://openrouter.ai/*"
+  ],
+  "background": { "scripts": ["background.js"] },
+  "browser_action": { "default_title": "Check selected text for AI" },
+  "options_ui": { "page": "options.html" },
+  "browser_specific_settings": {
+    "gecko": { "id": "ai@example.com" }
+  }
+}
